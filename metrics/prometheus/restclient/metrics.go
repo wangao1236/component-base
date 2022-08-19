@@ -109,6 +109,7 @@ func init() {
 
 	legacyregistry.MustRegister(requestLatency)
 	legacyregistry.MustRegister(requestResult)
+	legacyregistry.MustRegister(rateLimiterLatency)
 	legacyregistry.RawMustRegister(execPluginCertTTL)
 	legacyregistry.MustRegister(execPluginCertRotation)
 	metrics.Register(metrics.RegisterOpts{
